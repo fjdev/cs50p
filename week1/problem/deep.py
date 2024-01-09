@@ -5,13 +5,13 @@ Otherwise output No.
 
 def main():
     # Prompts the user for the answer to the Great Question of Life, the Universe and Everything.
-    x = input("What's the answer to the Great Question of Life, the Universe and Everything? ")
+    answer = input("What's the answer to the Great Question of Life, the Universe and Everything? ")
 
-    # Converts the user input to lowercase to make it case-insensitively.
-    x = x.lower()
+    # Converts the user input to lowercase to make it case-insensitively and removes any leading or trailing spaces.
+    answer = answer.lower().strip()
 
     # Checks if the user input equals to 42 or forty-two or forty two.
-    if x == "42" or x == "forty-two" or x == "forty two":
+    if answer == "42" or answer == "forty-two" or answer == "forty two":
         print("Yes")
     else:
         print("No")

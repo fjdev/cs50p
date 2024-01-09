@@ -12,8 +12,8 @@ def main():
     # Prompts the user for a greeting.
     greeting = input("Greeting: ")
 
-    # Converts the user input to lowercase to make it case-insensitively.
-    greeting = greeting.lower()
+    # Converts the user input to lowercase to make it case-insensitively and removes any leading or trailing spaces.
+    greeting = greeting.lower().strip()
 
     # Checks if the user input starts with "hello" or "h" or neither using the startswith() method.
     if greeting.startswith("hello"):

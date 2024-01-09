@@ -25,9 +25,11 @@ def main():
     # Prompts the user for the name of a file.
     file = input("File name: ")
 
-    # Checks the index of the last period and slices the string from that point. Converts the result to lowercase to make it case-insensitively.
-    file = file[file.rfind(".") :].lower()
-    print(file)
+    # Converts the user input to lowercase to make it case-insensitively and removes any leading or trailing spaces.
+    file = file.lower().strip()
+
+    # Checks the index of the last period and slices the string from that point.
+    file = file[file.rfind(".") :]
 
     # Checks if the user input ends with any of the suffixes using the endswith() method and outputs the media type accordingly.
     match file:
