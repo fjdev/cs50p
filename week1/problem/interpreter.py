@@ -17,10 +17,10 @@ def main():
     # Prompts the user for an arithmetic expression.
     expression = input("Expression: ")
 
-    # Removes any leading or trailing spaces.
+    # Removes any leading or trailing spaces from the user input.
     expression = expression.strip()
 
-    # Splits the expression into three parts: x, y, and z.
+    # Splits the expression into three parts: x, y and z.
     x, y, z = expression.split(" ")
 
     # Checks if y is a valid operator and outputs the result accordingly.
