@@ -7,18 +7,13 @@ In a file called camel.py, implement a program that prompts the user for the nam
 Assume that the user’s input will indeed be in camel case.
 """
 
-def main():
-    camel_case = input("Enter a variable name in camel case: ")
-    snake_case = camel_to_snake(camel_case)
-    print(snake_case)
+camel_case = input("Enter a variable name in camel case: ")
+snake_case = ""
 
-def camel_to_snake(text):
-    snake_case = []
-    for char in text:
-        if char.isupper():
-            snake_case.append('_' + char.lower())
-        else:
-            snake_case.append(char)
-    return ''.join(snake_case)
+for char in camel_case:
+    if char.isupper():
+        snake_case += '_' + char.lower()
+    else:
+        snake_case += char
 
-main()
+print(snake_case)
