@@ -7,12 +7,15 @@ In a file called camel.py, implement a program that prompts the user for the nam
 Assume that the user’s input will indeed be in camel case.
 """
 
-camel_case = input("Enter a variable name in camel case: ")
+# Prompts the user for a input.
+camel_case = input("Enter a variable name in camelCase: ")
 snake_case = ""
 
+# Loops through the input and checks if the character is uppercase.
+# If the character is uppercase, it adds a underscore and the lowercase character to the snake_case variable.   
 for char in camel_case:
     if char.isupper():
-        snake_case += '_' + char.lower()
+        snake_case += "_" + char.lower()
     else:
         snake_case += char
 
